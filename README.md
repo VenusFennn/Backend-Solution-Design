@@ -10,6 +10,12 @@ backend-solution-design
 
 该 Skill 只读分析后端变更并输出解决方案，不实施代码、数据、配置、迁移、提交、部署或发布。
 
+## 方案可读性
+
+方案固定保留“结论、事实与根因、双向影响面、约束与验收、详细方案、测试验证、风险待确认”七个顶层章节，二级内容根据任务实际范围和风险动态生成。
+
+当方案提及项目特有函数、类、Controller、Service、Repository、字段、文件、接口、表、Topic、缩写或专业术语时，会在第一次出现的相邻位置说明它是什么、负责什么，以及必要时为什么与当前问题有关。事务、幂等、Outbox 等术语还会说明其解决的具体业务或故障风险；原始技术标识仍然保留，便于开发者搜索和实施。
+
 ## Codex 项目级安装
 
 在 Codex 输入下列内容：
@@ -68,6 +74,7 @@ backend-solution-design
 - `backend-solution-design/SKILL.md` 存在；
 - `references/后端解决方案方法论.md` 存在；
 - `references/后端风险与验证指南.md` 存在；
+- `references/方案可读性规范.md` 存在；
 - `references/内容覆盖清单.md` 中所有章节均已勾选；
 - `SHA256SUMS` 与实际文件一致；
 - 没有覆盖未经确认的同名技能；
